@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Feliz cumple KIKITO!
+
+  html
+    body
+      table.table.table-striped(ng-controller='fiddleCtrl')
+        thead
+          th Name
+          th Horse
+          th Shots
+        tbody
+          tr-row(ng-repeat='d in data', scdata='d')
+
+block scripts
+  script(type="text/javascript" src="/javascripts/directives.js")
