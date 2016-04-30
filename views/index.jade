@@ -1,18 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Feliz cumple KIKITO!
-
   html
-    body
-      table.table.table-striped(ng-controller='fiddleCtrl')
+    body(ng-app="horses")
+      table.table.table-striped
         thead
           th Name
           th Horse
           th Shots
-        tbody
-          tr-row(ng-repeat='d in data', scdata='d')
+        tbody(users)
+
+
 
 block scripts
+  script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js")
   script(type="text/javascript" src="/javascripts/directives.js")

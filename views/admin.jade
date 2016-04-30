@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  form(role="form" method="post" action="/user")
+    div.form-group
+      input.form-control(type="text" name="name" placeholder="Name")
+    div(class="form-group")
+      input.form-control(type="text" name="horse" placeholder="Horse")
+    div(class="form-group")
+      input.form-control(type="text" name="shots" placeholder="Shots")
+    button.btn.btn-success(type="submit") Submit
+  div.clear
+    button.btn.btn-danger.clear(id="clear") Clear
+
+block scripts
+
